@@ -1,15 +1,15 @@
 {
-  "name": "client-compress",
+  "name": "@ssmithereens/client-compress",
   "version": "2.1.1",
-  "description":
-    "A client side JavaScript image compression library. Forked from compress.js (alextanhongpin), and improved rewrite by David Moodie.",
+  "description": "A client side JavaScript image compression library. Forked from compress.js (alextanhongpin), and improved rewrite by David Moodie.",
   "main": "dist/index.js",
-  "files": ["dist/index.js"],
+  "files": [
+    "dist/index.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -p --config webpack.config.js",
-    "watch":
-      "webpack --config webpack.config.js --watch -o example_test/out/index.js --mode development --devtool source-map",
+    "watch": "webpack --config webpack.config.js --watch -o example_test/out/index.js --mode development --devtool source-map",
     "precommit": "pretty-quick --staged"
   },
   "author": "David Moodie <david@davidmoodie.com> (https://davidmoodie.com)",
@@ -24,13 +24,18 @@
     "husky": "^0.14.3",
     "prettier": "1.12.1",
     "pretty-quick": "^1.4.1",
-    "webpack": "^4.7.0",
-    "webpack-cli": "^2.1.2"
+    "webpack": "^4.20.0",
+    "webpack-cli": "^3.1.1"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0"
   },
-  "keywords": ["javascript", "image", "compression", "base64"],
+  "keywords": [
+    "javascript",
+    "image",
+    "compression",
+    "base64"
+  ],
   "repository": "github:davejm/client-compress",
   "homepage": "https://github.com/davejm/client-compress",
   "bugs": "https://github.com/davejm/client-compress/issues"
