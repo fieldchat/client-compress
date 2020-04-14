@@ -16,7 +16,8 @@ class Compress {
       maxWidth: 1920,
       maxHeight: 1920,
       resize: true,
-      throwIfSizeNotReached: false
+      throwIfSizeNotReached: false,
+      exifOrientation: undefined,
     }
 
     const handler = {
@@ -70,7 +71,7 @@ class Compress {
     conversion.endHeight = newHeight
 
     // Create a canvas element and resize the image onto the canvas
-    const canvas = photo.getCanvas(newWidth, newHeight)
+    const canvas = photo.getCanvas(newWidth, newHeight, this.options.exifOrientation)
 
     // Initialise some variables for recursive call
     conversion.iterations = 0
