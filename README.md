@@ -28,20 +28,13 @@ There are several limitations for this library:
 
 ## Installation
 
-```
-yarn add client-compress
-```
-
-OR
-
-```
-npm install client-compress --save
+npm install @ssmithereens/client-compress --save
 ```
 
 ## Import
 
 ```
-const Compress = require('client-compress')
+const Compress = require('@ssmithereens/client-compress')
 ```
 
 ## Usage
